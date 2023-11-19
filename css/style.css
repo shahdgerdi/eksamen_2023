@@ -251,20 +251,6 @@ Hentet inspirasjon fra: https://www.w3schools.com/cssref/css3_pr_word-wrap.php*/
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Newsletter section */
 .newsletter {
     background-color: #ececec;
@@ -292,10 +278,6 @@ Hentet inspirasjon fra: https://www.w3schools.com/cssref/css3_pr_word-wrap.php*/
     background-color: #252525;
     color: #e6bd43;
 }
-
-
-
-
 
 
 /* STIL FOR FOOTER */
@@ -333,3 +315,47 @@ footer {
     text-decoration: none;
     font-size: 24px; /* Størrelsen på ikonene */
 }
+
+
+/* Stil for tilbake til toppen-knapp */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #252525; 
+    color: #fff; 
+    font-size: 16px;
+    padding: 10px; /* Polstring rundt tekst og ikon */
+    border-radius: 4px; /* Avrundede hjørner */
+    cursor: pointer; /* Musepekeren blir en hånd når du holder over */
+    width: 45px; /* Bredde på knappen */
+    height: 45px; /* Høyde på knappen */
+    display: flex; /* Bruker flexbox for å plassere ikonet */
+    align-items: center; 
+    justify-content: center; 
+}
+
+/* Stil for ikonet i knappen */
+.back-to-top i {
+    font-size: 24px; /* Størrelse på selve pilen */
+}
+
+
+/*  =============================
+    STILER FOR INDEX.HTML (mobil)
+    ==============================
+*/
+
+@media screen and (max-width: 768px) {
+    #grid-container {
+        display: grid;
+        grid-template-areas: 
+        "header"
+         "main" 
+         "footer";
+    }
+
+
+}
+
+

@@ -62,7 +62,6 @@ nav ul li a.active {
 }
 
 
-
 .contact {
     background-color: #e6bd43;
     font-weight: bold;
@@ -76,10 +75,25 @@ nav ul li a.active {
     color: #e6bd43;
 }
 
+
+
+
+
+/*  =================
+    STILER FOR INDEX.HTML
+    ================== */
+
+
 /* Stiler for index.html */
 main {
     grid-area: main;
 }
+
+
+/*  ====================
+    STILER FOR INDEX.HTML
+    =====================
+*/
 
 /* Stiler for seksjonsklassen : Mountains */
 .mountains {
@@ -212,15 +226,43 @@ Hentet inspirasjon fra: https://www.w3schools.com/cssref/css3_pr_word-wrap.php*/
     color: #e6bd43;
 }
 
+/* Justerer på størrelsen til ikonene */
+.fa-users, .fa-cloud-upload-alt, .fa-code, .fa-wifi {
+    font-size: 35px;
+}
 
 /* Services */
 .services {
     padding: 3rem;
+    display: flex;
+    flex-direction: row;
+    gap:50px;
 }
+
+.our-services {
+    font-size:40px;
+    padding:3rem;
+    text-align:center;
+}
+
 
 .service {
     text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Newsletter section */

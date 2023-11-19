@@ -1,0 +1,258 @@
+/* Generelle stiler */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-areas: "header header header" "main main main" "footer footer footer";
+}
+
+/* Header stil */
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    top: 0;
+}
+
+header #logo {
+    width: 90px;
+}
+
+/* Nav Bar: Generelle stiler */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0; /* Nullstill margin */
+    padding: 0; /* Nullstill padding */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    padding: 0.3rem 1rem;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+    border-bottom: 4px solid #e6bd43;
+}
+
+nav ul li a:hover:not(.contact) {
+    border-bottom: 4px solid #e6bd43;
+}
+
+.contact {
+    background-color: #e6bd43;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.contact:hover {
+    background-color: #252525;
+    color: #e6bd43;
+}
+
+/* Stiler for index.html */
+main {
+    grid-area: "main";
+}
+
+.mountains {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 450px;
+    padding-top: 100px;
+    position: relative;
+    text-align: center;
+    color: #000;
+}
+
+.mountains video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.mountains h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    z-index: 2;
+}
+
+.mountains p {
+    max-width: 700px;
+    word-wrap: break-word;
+}
+
+.mountains .btn {
+    margin-top: 1rem;
+    padding: 10px 30px;
+    background-color: #f1c40f;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #252525;
+    color: #f1c40f;
+}
+
+.intro {
+    margin-top: 3rem;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 36px;
+    margin-bottom: 2.5rem;
+}
+
+.intro p { 
+    font-size: 20px;
+    margin-bottom: 5rem;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background-color: #e6bd43;
+    padding: 3rem;
+}
+
+.about-text {
+    margin-top: 5rem;
+    margin-left: 2rem;
+}
+
+.about-image {
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+}
+
+.about-title {
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 1.5rem;
+}
+
+.about-description {
+    font-size: 20px;
+}
+
+.about-btn2 {
+    padding: 10px 20px;
+    margin-top: 2rem;
+    background-color: #e6bd43;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid #000;
+}
+
+.about-btn2:hover {
+    background-color: #252525;
+    color: #e6bd43;
+}
+
+
+/* Services */
+.services {
+    padding: 3rem;
+}
+
+.service {
+    text-align: center;
+}
+
+
+/* Newsletter section */
+.newsletter {
+    background-color: #ececec;
+    text-align: center;
+    padding: 3rem;
+}
+
+
+.newsletter input[type="email"] {
+    padding: 0.6rem;
+    margin-right: 0.5rem;
+    border: none;
+}
+
+.btn3 {
+    padding: 0.6rem;
+    cursor: pointer;
+    border:none;
+    background-color: #e6bd43;
+    font-weight: bold;
+}
+
+
+.btn3:hover{
+    background-color: #252525;
+    color: #e6bd43;
+}
+
+
+
+
+
+
+/* STIL FOR FOOTER */
+
+footer {
+    grid-area:footer;
+    background-color: #333; /* Endre til fargen som brukes i foten din */
+    color: white;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:2rem;
+}
+
+#footer-logo {
+    /* Juster størrelsen på logoen etter behov */
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#social-icons {
+    list-style: none;
+    padding: 0;
+    display: inline-block; /* Eller flex for bedre kontroll */
+}
+
+#social-icons li {
+    display: inline; /* Eller inline-block */
+    margin-right: 10px; /* Juster mellomrommet mellom ikonene */
+}
+
+#social-icons li a {
+    color: white; /* Ikonfargen */
+    text-decoration: none;
+    font-size: 24px; /* Størrelsen på ikonene */
+}

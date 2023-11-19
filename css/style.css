@@ -1,17 +1,26 @@
-/* Generelle stiler */
+/*  =============== 
+    GENERELLE STILER 
+    =============== */
+
+/* Generelle stil for hele body området til nettsiden */
+
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+
+
+/* Ordnet grid-container for nettsiden */
 #grid-container {
     display: grid;
     grid-template-areas: "header header header" "main main main" "footer footer footer";
 }
 
-/* Header stil */
+
+/* Grunnleggende header stil */
 header {
     grid-area: header;
     display: flex;
@@ -21,17 +30,20 @@ header {
     top: 0;
 }
 
+
+/* Fikset størrelse for logoen i header */
 header #logo {
     width: 90px;
 }
 
-/* Nav Bar: Generelle stiler */
+
+/* NAV området */
 nav ul {
     list-style: none;
     display: flex;
     gap: 1rem;
-    margin: 0; /* Nullstill margin */
-    padding: 0; /* Nullstill padding */
+    margin: 0; 
+    padding: 0;
 }
 
 nav ul li a {
@@ -40,14 +52,16 @@ nav ul li a {
     padding: 0.3rem 1rem;
 }
 
+
+/* Ordnet en nedre kantlinje og fet skriftstil på klassen "active", slik at
+ denne stilen gjelder for hver HTML-side som bruker denne klassen i header-området. */
+
 nav ul li a.active {
     font-weight: bold;
     border-bottom: 4px solid #e6bd43;
 }
 
-nav ul li a:hover:not(.contact) {
-    border-bottom: 4px solid #e6bd43;
-}
+
 
 .contact {
     background-color: #e6bd43;
@@ -55,6 +69,8 @@ nav ul li a:hover:not(.contact) {
     padding: 15px;
 }
 
+/* Ordnet hover for "contact" knappen for nav området */
+/* Hentat fra: https://www.w3schools.com/cssref/sel_hover.php */
 .contact:hover {
     background-color: #252525;
     color: #e6bd43;
@@ -62,9 +78,10 @@ nav ul li a:hover:not(.contact) {
 
 /* Stiler for index.html */
 main {
-    grid-area: "main";
+    grid-area: main;
 }
 
+/* Stiler for seksjonsklassen : Mountains */
 .mountains {
     display: flex;
     justify-content: center;
@@ -77,6 +94,7 @@ main {
     color: #000;
 }
 
+/* Stiler bakgrunnsvideo: Mountains */
 .mountains video {
     position: absolute;
     top: 0;
@@ -85,20 +103,25 @@ main {
     height: 100%;
     object-fit: cover;
     z-index: -1;
-    opacity: 0.5;
+    opacity: 0.5;      /*Justeret på opacity slikt som på prototypen for at videoen ikke skal bli skarp*/
 }
 
+
+/* Justert på størrelsen og plassering av h1 */
 .mountains h1 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
     z-index: 2;
 }
 
+/* Justert størrelse for å unngå lang bredde på "p"-teskten.
+Hentet inspirasjon fra: https://www.w3schools.com/cssref/css3_pr_word-wrap.php*/
 .mountains p {
     max-width: 700px;
     word-wrap: break-word;
 }
 
+/* Justering av knappen ved videoen  */
 .mountains .btn {
     margin-top: 1rem;
     padding: 10px 30px;
@@ -109,11 +132,13 @@ main {
     text-decoration: none;
 }
 
+/* Ordnet hover til knappen med bestemt fargekode */
 .btn:hover {
     background-color: #252525;
     color: #f1c40f;
 }
 
+/* Stiler for intro seksjonen (teksten som er under mountains seksjon) */
 .intro {
     margin-top: 3rem;
     padding: 30px;
@@ -123,16 +148,21 @@ main {
     text-align: center;
 }
 
+/* Stil for h2 i intro seksjon */
 .intro h2 {
     font-size: 36px;
     margin-bottom: 2.5rem;
 }
 
+
+/* Stil for p i intro seksjon */
 .intro p { 
     font-size: 20px;
     margin-bottom: 5rem;
 }
 
+
+/* Justertinger for about kategori */
 .about {
     display: flex;
     flex-direction: row;
@@ -141,11 +171,14 @@ main {
     padding: 3rem;
 }
 
+
 .about-text {
     margin-top: 5rem;
     margin-left: 2rem;
 }
 
+
+/* Justeringer for placeholder */
 .about-image {
     width: 400px;
     height: 400px;
@@ -172,6 +205,8 @@ main {
     border: 2px solid #000;
 }
 
+
+/* Ordnet knappen som er i hoveret i about seksjonen */
 .about-btn2:hover {
     background-color: #252525;
     color: #e6bd43;

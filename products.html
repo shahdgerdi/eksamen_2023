@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Company Name</title>
+    <title>Company</title>
+    <!-- FAVICON : Hentet fra: https://www.w3schools.com/html/html_favicon.asp -->
+    <link rel="icon" type="image/x-icon" href="img/favicon-fruit.png">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 </head>
-
 <body>
+    <!-- TILBAKE TIL TOPPEN KNAPP - Hentet fra: https://levelup.gitconnected.com/how-to-implement-scroll-to-top-with-only-css-ae27cb9d4678 -->
+    <a href="#top" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+    <!-- Header section -->
     <header>
         <a href="index.html">
             <img src="img/logo1.png" alt="Company Logo" id="logo">
@@ -17,11 +20,119 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="products.html" class="active">Portfolio</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="about.html" class="contact">Contact</a></li>
             </ul>
         </nav>
-        
-        
     </header>
+
+    <!-- Main content area -->
+    <div id="grid-container">
+    <main>
+        <!-- Portfolio introduction -->
+        <section class="portfolio-intro">
+            <img src="img/office.jpg" alt="Office" class="office-image">
+            <h1>Portfolio</h1>
+        </section>
+        
+        
+        <!-- Portfolio Navigation -->
+        <nav class="portfolio-navigation">
+            <h2 class="explore">Explore Previous Jobs</h2>
+            <ul class="portfolio-navigation-list">
+                <li class="portfolio-navigation-item"><a href="#branding" class="portfolio-navigation-link">Branding</a></li>
+                <li class="portfolio-navigation-item"><a href="#design" class="portfolio-navigation-link">Design</a></li>
+                <li class="portfolio-navigation-item"><a href="#development" class="portfolio-navigation-link">Development</a></li>
+            </ul>
+        </nav>
+
+
+        <!-- Seksjon for Branding-->
+        <section id="branding">
+        <h2 class="branding-title">Branding</h2>
+            <!-- Branding Artikkelkort 1 -->
+            <article>
+                <img src="https://placehold.co/400x400/png" alt="Branding project image 1">
+                <h3>Et harum quidem</h3>
+            </article>
+            <!-- Branding Artikkelkort 2 -->
+            <article>
+                <img src="https://placehold.co/400x400/png" alt="Branding project image 1">
+                <h3>Et harum quidem</h3>
+            </article>
+
+            <!-- Branding Artikkelkort 3 -->
+            <article>
+                <img src="https://placehold.co/400x400/png" alt="Branding project image 1">
+                <h3>Et harum quidem</h3>
+            </article>
+
+            <!-- Branding Artikkelkort 4 -->
+            <article>
+                <img src="https://placehold.co/400x400/png" alt="Branding project image 1">
+                <h3>Et harum quidem</h3>
+            </article>
+        </section>
+
+
+        
+        <!-- Seksjon for Design-->
+        <section id="design">
+            <h2 class="design-title">Design</h2>
+            <!-- Design Artikkelkort 1 -->
+            <article>
+                <img src="https://placehold.co/400x400/png" alt="Branding project image 1">
+                <h3>Et harum quidem</h3>
+            </article>
+
+            <!-- Design Artikkelkort 2 -->
+            <article>
+                <img src="https://placehold.co/400x400/png" alt="Branding project image 1">
+                <h3>Et harum quidem</h3>
+            </article>
+
+            <!-- Design Artikkelkort 3 -->
+            <article>
+                <img src="https://placehold.co/400x400/png" alt="Branding project image 1">
+                <h3>Et harum quidem</h3>
+            </article>
+
+        </section>
+        
+
+
+
+         <!-- Seksjon for Development-->
+         <section id="development">
+            <h2 class="development-title">Development</h2>
+
+            <!-- Development Artikkelkort 1 -->
+            <article>
+                <img src="https://placehold.co/400x400/png" alt="Branding project image 1">
+                <h3>Et harum quidem</h3>
+            </article>
+
+            <!-- Development Artikkelkort 2 -->
+            <article>
+                <img src="https://placehold.co/400x400/png" alt="Branding project image 1">
+                <h3>Et harum quidem</h3>
+            </article>
+        </section>
+        
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <img src="img/logo1.png" alt="Company Logo" id="footer-logo">
+        <p>Company copyright © 2023</p>
+        <!-- Inspirasjon for footer, social icons hentet fra: https://github.com/HIO-Webutvikling/WEBUTVIKLING2023/blob/main/RESPONSIVT-DESIGN/04.10/index.html -->
+        <ul id="social-icons">
+            <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+        </ul>
+    </footer>
+    </div>
+</body>
+</html>

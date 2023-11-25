@@ -629,48 +629,63 @@ footer {
     position: relative;
 }
 
-
-.article-content {
-    justify-content: center;
-}
-
-
-/* Setter opp "lille boksen" for flexbox */
-.content {
-    position: absolute;
-    background: rgba(255, 255, 255, 0.8);
-    width: 30%; /* Juster bredden etter behov */
-    padding: 30px;
-    padding-top:1rem;
-    z-index: 2;
-    right:2rem;
-}
-
-.content h1 {
-    font-size: 15px;
-    font-weight: lighter;
-}
-
-.content p {
-    display: block;
-}
-
-/* Stiler for bakgrunnsbilde som ikke er absolutt posisjonert */
-.about-company img {
+/* Stil for bakgrunnsbildet til about siden */
+.background-image {
     width: 100%;
-    height: 450px;
+    height: 400px;
+    filter:brightness(50%);
     object-fit: cover;
-    filter: brightness(50%);
+    position: relative;
+    z-index: -1;
 }
 
-  .readmore-btn {
-    display: inline-block; /* Gjør at knappen kan ha padding og margin */
-    background-color: #e6bd43; /* Bakgrunnsfarge på knappen */
-    color: #000; /* Tekstfarge på knappen */
+/* Stil for den "ille boksen" på bildet. */
+.about-info {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.827);
+    width: 40%; 
+    padding:2rem;
+    margin-right: 5%;
+    box-sizing: border-box;
+}
+
+
+
+/* Stil for tekster i den lilel boksen */
+
+.about-info h1 {
+    font-size: 0.8rem;
+    font-weight: lighter;
+    margin-bottom: 0.8rem;
+}
+
+.about-info h2 {
     font-weight: bold;
-    padding: 10px 25px; /* Plass inni knappen */
-    text-decoration: none; /* Fjerner understrekning fra lenker */
-  }
+    font-size: 1rem;
+
+}
+
+.about-info p {
+    line-height: 1.4;
+    margin-bottom: 0.8rem;
+    font-size: 0.8rem;
+}
+
+/* Stiler for knappen i "lille boksen" */
+.readmore-btn {
+    background-color: #e6bd43;
+    color: #000;
+    padding: 0.7rem 0.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.8rem;
+    display: inline-block; /* Gjør at elementet kan ha margin og padding */
+}
+
+.readmore-btn:hover {
+    background-color: #252525;
+    color: #e6bd43;
+}
   
   .readmore-btn:hover {
     background-color: #252525;

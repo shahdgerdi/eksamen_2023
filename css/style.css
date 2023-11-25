@@ -489,7 +489,6 @@ footer {
 */
 
 
-
 /* Portfolio området  */
 .portfolio-intro {
     display: flex;
@@ -550,29 +549,8 @@ footer {
 
 /* BRANDING OMRÅDET */
 
-#branding {
-    display: flex;
-    flex-wrap: wrap; /* hvis du ønsker at elementene skal kunne flyte til neste linje */
-    
-    
-}
 
-#branding article {
-    flex-grow: 1; /* Dette får hvert artikkel-element til å vokse og fylle tilgjengelig plass */
-    
-}
-
-#branding img {
-    flex-grow: 1; /* Dette får hvert artikkel-element til å vokse og fylle tilgjengelig plass */
-    width: 400px; /* Dette sørger for at bildet fyller artikkelelementet */
-    height: 400px; /* Beholder bildets aspekt ratio */
-    max-width: 929px;
-    
-}
-
-
-
-
+/* Fikser underlinje for branding delen */
 .branding-title {
     border-bottom: solid 3px #e6bd43;
     margin: 2rem;
@@ -580,15 +558,7 @@ footer {
     padding-top:2rem;
 }
 
-
-
-
-
-
-
-
-
-
+  
 
 
 /* DESIGN OMRÅDET */
@@ -601,11 +571,6 @@ footer {
 
 
 
-
-
-
-
-
 /* Development området */
 
 .development-title{
@@ -613,6 +578,41 @@ footer {
     margin: 2rem;
     padding:1rem;
 }
+
+
+/* FELLES STILER FOR ALLE 3 ULIKE SEKSJONENE */
+
+#branding, #design, #development {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 2rem;
+    box-sizing: border-box;
+  }
+  
+  #branding article, #design article, #development article {
+    /* Kode hentet fra: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Controlling_ratios_of_flex_items_along_the_main_axis */
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 30%;
+    max-width: 692px; /*Setter på max-widht slikt at placeholders ikke blir større enn 629px*/
+  }
+  
+  #branding article img, #design article img, #development article img {
+    width: 100%; 
+    height: auto;
+    display: block;
+  }
+  
+
+  /* HOVER EFFEKT PÅ PLACEHOLDERSENE */
+/* Kode for hover effekt. Hentet fra: https://thoughtbot.com/blog/transitions-and-transforms */
+  #branding article:hover, #design article:hover, #development article:hover {
+    transform: scale(1.05); /* Lett zoom-effekt */
+    transition: all 0.3s ease-in-out; /* Gjør overgangen glatt */
+}
+
+
 
 
 
@@ -822,9 +822,6 @@ footer {
         align-items: center;
     }
 
-    /* Bakgrunnsbilde */
-    .about-company img {
-    }
 
     /* Content */
     .content {

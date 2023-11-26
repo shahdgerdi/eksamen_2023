@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 </head>
-<body>
+<body class="about-body">
     <!-- Header seksjon -->
     <header>
         <a href="index.html">
@@ -28,7 +28,7 @@
     <div id="grid-container">
     <main>
 
-        <section class="about-company">
+        <section class="about-company" aria-label="Seksjon for infoboks">
             <img src="img/code.jpg" alt="Bilde som bakgrunn" class="background-image">
             <article class="about-info">
                 <h1>Company name</h1>
@@ -39,9 +39,7 @@
         </section>
         
 
-        
-    </section>
-    <!-- OUR SERVIDCES : Seksjon -->
+            <!-- OUR SERVIDCES : Seksjon -->
     <h2 class="our-services-2">Our Services</h2>
     <section class="services-2" aria-label="services">
         <article class="service-2">
@@ -98,13 +96,13 @@
                 <input type="text" id="subject" name="subject" placeholder="Branding.." required>
     
                 <label for="message">Message</label>
-                <textarea id="message" name="message" placeholder="Your message.." required></textarea>
+                <textarea id="message" name="message" required></textarea>
     
                 <button type="submit">Send message</button>
             </form>
         </section>
     
-        <section class="contact-info">
+        <section class="contact-info" aria-label="Contact info class">
             <article>
                 <h3>Contact information</h3>
                 <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint</p>
@@ -118,8 +116,8 @@
 
         <!-- GOOGLE MAPS, KART - seksjon -->
         <!-- Kode hentet fra: https://blog.hubspot.com/website/how-to-embed-google-map-in-html -->
-        <section class="google-map" aria-hidden="true">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.188441060451!2d11.350228376782145!3d59.12924747451802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f72dd0f16b%3A0x54daade2c0319210!2sH%C3%B8gskolen%20i%20%C3%98stfold%20-%20Halden!5e0!3m2!1sno!2sno!4v1700761492172!5m2!1sno!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section class="google-map" aria-label="Google map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.188441060451!2d11.350228376782145!3d59.12924747451802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f72dd0f16b%3A0x54daade2c0319210!2sH%C3%B8gskolen%20i%20%C3%98stfold%20-%20Halden!5e0!3m2!1sno!2sno!4v1700761492172!5m2!1sno!2sno" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
 
         
@@ -137,8 +135,8 @@
             <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
         </ul>
     </footer>
-    
     <a href="#top" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
-</body>
 </div>
+
+</body>
 </html>

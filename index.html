@@ -14,11 +14,13 @@
 </head>
 
 <body>
+    <div id="grid-container">
+
 <!-- TILBAKE TIL TOPPEN KNAPP - Hentet fra: https://levelup.gitconnected.com/how-to-implement-scroll-to-top-with-only-css-ae27cb9d4678 -->
-<a href="#top" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+<a href="#top" class="back-to-top" title="Go to top of page"><i class="fas fa-arrow-up"></i></a>
     <header>
         <a href="index.html">
-            <img src="img/logo1.png" alt="Company Logo" id="logo">
+            <img src="img/logo1.png" title="Go to main page" alt="Company Logo important for the page" id="logo">
         </a>
         <nav>
             <ul>
@@ -27,23 +29,23 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="about.html" class="contact">Contact</a></li>
             </ul>
-        </nav> 
-        
-        
-    </header>
 
-    <div id="grid-container">
+            
+        </nav> 
+    
+    </header>
         <main>
             <section class="mountains">
                 <!-- Video for forsiden -->
+                <!-- Kode hentet fra: https://www.gumlet.com/learn/how-to-autoplay-html-video/-->
                 <video autoplay muted loop id="myVideo">
                     <source src="img/mountains.mp4" type="video/mp4">
                 </video>
                 <!-- Bildet som er kun tilgjengelig på mobil versjonen -->
-                <img src="img/seoul.jpg" alt="Seoul" class="seoul-image">
+                <img src="img/seoul.jpg" alt="Picture with view of Seoul, showing urban landscape" class="seoul-image">
                 <h1>Compelling headline</h1>
                 <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-                <a href="#" class="btn">Read more about our services</a>
+                <a href="#our-services" class="btn">Read more about our services</a>
             </section>
 
             <section class="intro">
@@ -52,7 +54,7 @@
             </section>
 
             <article class="about">
-            <img src="https://placehold.co/400x400" alt="About Us Image" class="about-image">
+            <img src="https://placehold.co/400x400" alt="A placeholder picture dedicated for information about the company" class="about-image">
             <div class="about-text">
              <h3 class="about-title">About Our Company</h3>
              <p class="about-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur</p>
@@ -63,7 +65,7 @@
               
               
         <!-- OUR SERVIDCES -->
-        <h2 class="our-services">Our Services</h2>
+        <h2 id="our-services">Our Services</h2>
             <section class="services" aria-label="services">
                 <article class="service">
                     <i class="fas fa-users" aria-hidden="true"></i>
@@ -103,9 +105,9 @@
         <p>Company copyright © 2023</p>
         <!-- Inspirasjon for footer, social icons hentet fra: https://github.com/HIO-Webutvikling/WEBUTVIKLING2023/blob/main/RESPONSIVT-DESIGN/04.10/index.html -->
         <ul id="social-icons">
-            <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-            <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-            <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.facebook.com" target="_blank" title="Follow us on Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.instagram.com" target="_blank" title="Follow us on Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.linkedin.com" target="_blank" title="Follow us on LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
         </ul>
     </footer>
     

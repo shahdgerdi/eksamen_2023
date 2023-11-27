@@ -1,3 +1,7 @@
+/* Importerer fra Google Fonts */
+/* Hentet fra: https://fonts.google.com/specimen/Poppins?preview.size=47 */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
 /* =====================
    GENERELLE STILER
    ===================== */
@@ -7,9 +11,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
-
 /* 
   --- LAYOUT STILER ---
 */
@@ -172,8 +175,7 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 300px;
-    padding-top: 100px;
+    height: 450px;
     position: relative;
     text-align: center;
     color: #000;
@@ -320,8 +322,8 @@ Hentet inspirasjon fra: https://www.w3schools.com/cssref/css3_pr_word-wrap.php*/
     gap:50px;
 }
 
-.our-services {
-    font-size:40px;
+#our-services {
+    font-size:35px;
     padding:2rem;
     text-align:center;
 }
@@ -385,11 +387,13 @@ Hentet inspirasjon fra: https://www.w3schools.com/cssref/css3_pr_word-wrap.php*/
 }
 
 .portfolio-intro img {
-    height: 350px;
+    height: 400px;
     width: 100%;
     object-fit: cover;
     opacity: 0.5;
 }
+
+
 
 /* Sentrering av barneelementer - kilde: https://www.freecodecamp.org/news/how-to-center-anything-with-css-align-a-div-text-and-more/ */
 .portfolio-intro h1 {
@@ -508,22 +512,25 @@ Hentet inspirasjon fra: https://www.w3schools.com/cssref/css3_pr_word-wrap.php*/
 
 /* --- Stil for Informasjonsboks --- */
 .about-info {
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    background: rgba(255, 255, 255, 0.645);
-    width: 40%;
-    padding: 2rem;
-    margin-right: 5%;
+    background: rgba(255, 255, 255, 0.711);
+    width: 46%;
+    padding: 35px;
+    margin-right: 2.5rem;
     box-sizing: border-box;
 }
 
 /* Tekster i informasjonsboksen */
-.about-info h1, .about-info h2, .about-info p {
-    font-size: 0.8rem;
-    margin-bottom: 0.8rem;
+
+ .about-info h2, .about-info p {
+    font-size: 0.9rem;
 }
 
 .about-info h1 {
     font-weight: lighter;
+    font-size: 0.8rem;
 }
 
 .about-info h2 {
@@ -533,13 +540,15 @@ Hentet inspirasjon fra: https://www.w3schools.com/cssref/css3_pr_word-wrap.php*/
 /* --- Stiler for Knapp i Informasjonsboksen --- */
 .readmore-btn {
     background-color: #e6bd43;
-    color: #000;
-    padding: 0.7rem 0.5rem;
-    text-decoration: none;
-    font-weight: bold;
+    color: #000; 
+    padding: 0.7rem 0.4rem 0.7rem 0.7rem; 
+    text-decoration: none; 
+    font-weight: bold; 
     font-size: 0.8rem;
-    display: inline-block;
+    display: block; 
+    max-width: 130px;
 }
+
 
 .readmore-btn:hover {
     background-color: #252525;
@@ -566,24 +575,43 @@ Hentet inspirasjon fra: https://www.w3schools.com/cssref/css3_pr_word-wrap.php*/
 }
 
 /* --- Klient Seksjon --- */
+
 .client-section {
+    padding:2rem;
     background-color: #e6bd43;
-    padding: 30px;
-    text-align: center;
 }
+
 
 .client-section h2 {
     color: #000;
     margin-bottom: 20px;
-    font-size: 35px;
+    font-size: 25px;
+    text-align: center;
 }
 
-.client-logo {
-    max-width: 100px;
-    height: auto;
-    margin: 2.5rem;
-    display: inline-block;
+
+.client-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    padding-top: 1.5rem;
+   
 }
+
+/* Stiler for hver enkelt logo */
+.client-logo {
+    max-width: 120px; /* Juster etter behov */
+    height: auto;
+    margin: 1rem; /* Gir mellomrom rundt hver logo */
+}
+
+.client-logo img {
+    width: 100%; /* Gjør bildet responsivt innenfor beholderen */
+    height: auto;
+}
+
+
+
 
 /* --- Kontakt Oss Seksjon --- */
 /* Kontaktskjema og informasjon */
@@ -599,7 +627,7 @@ Hentet inspirasjon fra: https://www.w3schools.com/cssref/css3_pr_word-wrap.php*/
     justify-content: space-between;
 }
 
-.h2-contact {
+#h2-contact {
     text-align: center;
     font-size: 2em;
     padding: 2rem;
@@ -651,6 +679,10 @@ button[type="submit"]:hover {
 .contact-info i {
     margin-right: 10px;
 }
+
+
+
+
 
 /* --- Google Kart Seksjon --- */
 .google-map iframe {
@@ -712,10 +744,10 @@ button[type="submit"]:hover {
         align-items: center;
     }
 
-    /* Justeringer for Sosiale Medier-ikoner */
-    #social-icons li {
-        display: block;
-        margin-top: 1rem;
+    #social-icons {
+        flex-direction: row; /* Sikrer at elementene legges horisontalt */
+        justify-content: center;
+
     }
 
     /* Justeringer for 'Tilbake til toppen'-knapp */
@@ -744,7 +776,7 @@ button[type="submit"]:hover {
         padding-top: 0;
         text-align: center;
         font-size: 18px;
-        padding: 3rem;
+        padding: 4rem;
     }
     .seoul-image {
         display: block;
@@ -805,7 +837,6 @@ button[type="submit"]:hover {
 }
 
 
-}
 
 /* 
 ==================
@@ -814,4 +845,57 @@ button[type="submit"]:hover {
 ==================
 */
 
+/* Baktrunns */
+.background-image {
+    height: 750px; 
+    width: 100%;
+}
 
+.about-info {
+    width: 80%; 
+    padding: 2.5rem; 
+}
+
+.about-info h1, .about-info h2, .about-info p {
+    font-size: 1rem; 
+}
+
+.readmore-btn {
+    padding: 0.5rem 1rem; 
+    font-size: 1rem;
+}
+
+
+
+.contact-form {
+    flex-direction: column; /* Stabler elementene vertikalt */
+}
+
+.submit-message, .contact-info {
+    width: 100%; /* Fyller ut hele bredden */
+    margin-bottom: 1rem; /* Legger til litt margin mellom elementene */
+}
+
+button[type="submit"] {
+    width: 100%; /* Full bredde for mobil */
+}
+
+
+    /* Gjør at flex-container står vertikalt istedenfor horisontalt */
+    .services-2, .contact-form {
+        flex-direction: column;
+    }
+
+
+
+    /* Sørger for at input-felter og tekstområder er bredere for å utnytte skjermen bedre */
+    input[type="text"], textarea {
+        width: 100%;
+    }
+
+
+    /* Justerer kartets størrelse til å være mer responsivt */
+    .google-map iframe {
+        height: 300px;
+    }
+}

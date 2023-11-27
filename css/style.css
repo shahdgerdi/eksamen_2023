@@ -775,9 +775,10 @@ button[type="submit"]:hover {
         align-items: center;
         padding-top: 0;
         text-align: center;
-        font-size: 18px;
-        padding: 4rem;
     }
+
+
+
     .seoul-image {
         display: block;
         position: absolute;
@@ -790,6 +791,8 @@ button[type="submit"]:hover {
     }
     .mountains h1, .mountains p {
         color: #fff;
+        padding: 20px;
+        margin: 0;
     }
 
     /* Justeringer for 'Om Oss'-seksjon */

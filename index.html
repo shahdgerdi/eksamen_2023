@@ -6,56 +6,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
     <!-- Opengraph metadata :  -->
     <!-- Hentet fra: https://rankmath.com/kb/open-graph-meta-tags/ -->
-    <meta property="og:title" content="Company Business - Innovative Solutions for Your Business" />
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content="Elevate Yoru Business - Discover our innovative branding, design, and development solutions on our homepage." />
-    <meta property="og:image" content= "https://cdn.pixabay.com/photo/2018/01/20/14/26/skyscraper-3094696_1280.jpg" />
+    <meta property="og:title" content="Company Business - Innovative Solutions for Your Business">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="#">
+    <meta property="og:description" content="Elevate Your Business - Discover our innovative branding, design, and development solutions on our homepage.">
+    <meta property="og:image" content="https://cdn.pixabay.com/photo/2018/01/20/14/26/skyscraper-3094696_1280.jpg">
 
+    <title>Company Business</title>
 
-    <title> Company Business</title>
-     <!-- FAVICON : Hentet fra: https://www.w3schools.com/html/html_favicon.asp -->
+    <!-- FAVICON : Hentet fra: https://www.w3schools.com/html/html_favicon.asp -->
     <link rel="icon" type="image/x-icon" href="img/favicon-fruit.png">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-    
-
 </head>
 
 <body>
     <div id="grid-container">
+        <!-- TILBAKE TIL TOPPEN KNAPP - Hentet fra: https://levelup.gitconnected.com/how-to-implement-scroll-to-top-with-only-css-ae27cb9d4678 -->
+        <a href="#top" class="back-to-top" title="Go to top of page"><i class="fas fa-arrow-up"></i></a>
 
-<!-- TILBAKE TIL TOPPEN KNAPP - Hentet fra: https://levelup.gitconnected.com/how-to-implement-scroll-to-top-with-only-css-ae27cb9d4678 -->
-<a href="#top" class="back-to-top" title="Go to top of page"><i class="fas fa-arrow-up"></i></a>
-    <header>
-        <a href="index.html">
-            <img src="img/logo1.png" title="Go to main page" alt="Company Logo important for the page" id="logo">
-        </a>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="products.html">Portfolio</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="about.html" class="contact">Contact</a></li>
-            </ul>
+        <header itemscope itemtype="https://schema.org/WebPage">
+            <a href="index.html">
+                <img itemprop="logo" src="img/logo1.png" alt="Company Logo" id="logo">
+            </a>
+            <nav>
+                <ul itemscope itemtype="https://schema.org/BreadcrumbList">
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <a href="index.html" itemprop="item"><span itemprop="name">Home</span></a>
+                        <meta itemprop="position" content="1">
+                    </li>
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <a href="products.html" itemprop="item"><span itemprop="name">Portfolio</span></a>
+                        <meta itemprop="position" content="2">
+                    </li>
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <a href="about.html" itemprop="item" class="active"><span itemprop="name">About</span></a>
+                        <meta itemprop="position" content="3">
+                    </li>
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <a href="contact.html" itemprop="item" class="contact"><span itemprop="name">Contact</span></a>
+                        <meta itemprop="position" content="4">
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-            
-        </nav> 
-    
-    </header>
-        <main>
+        <main itemprop="mainContentOfPage" itemscope itemtype="https://schema.org/Article">
             <section class="mountains">
                 <!-- Video for forsiden -->
-                <!-- Kode hentet fra: https://www.gumlet.com/learn/how-to-autoplay-html-video/-->
-                <video autoplay muted loop id="myVideo">
-                    <source src="img/mountains.mp4" type="video/mp4">
+                <!-- Kode hentet fra: https://www.gumlet.com/learn/how-to-autoplay-html-video/ -->
+                <video itemprop="subjectOf" itemscope itemtype="https://schema.org/VideoObject" autoplay muted loop id="myVideo">
+                    <source src="img/mountains.mp4" type="video/mp4" itemprop="contentUrl">
+                    <meta itemprop="name" content="Video-background">
+                    <meta itemprop="thumbnailUrl" content="img/mountains.mp4">
+                    <meta itemprop="uploadDate" content="2023-11-27">
+                    <meta itemprop="description" content="Video on loop with beautiful view.">
                 </video>
                 <!-- Bildet som er kun tilgjengelig på mobil versjonen -->
                 <img src="img/seoul.jpg" alt="Picture with view of Seoul, showing urban landscape" class="seoul-image">
-                <h1>Compelling headline</h1>
-                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                <h1 itemprop="headline">Compelling headline</h1>
+                <p itemprop="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
                 <a href="#our-services" class="btn">Read more about our services</a>
             </section>
 
@@ -65,64 +77,60 @@
             </section>
 
             <article class="about">
-            <img src="https://placehold.co/400x400" alt="A placeholder picture dedicated for information about the company" class="about-image">
-            <div class="about-text">
-             <h3 class="about-title">About Our Company</h3>
-             <p class="about-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur</p>
-         <a href="about.html" class="about-btn2">Read more about us</a>
-            </div>
-</article>
+                <img src="https://placehold.co/400x400" alt="A placeholder picture dedicated for information about the company" class="about-image">
+                <div class="about-text">
+                    <h3 class="about-title">About Our Company</h3>
+                    <p class="about-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur</p>
+                    <a href="about.html" class="about-btn2">Read more about us</a>
+                </div>
+            </article>
 
-              
-              
-        <!-- OUR SERVIDCES -->
-        <h2 id="our-services">Our Services</h2>
+            <!-- OUR SERVICES -->
+            <h2 id="our-services">Our Services</h2>
             <section class="services" aria-label="services">
-                <article class="service">
+                <!-- Branding Service -->
+                <article class="service" itemscope itemtype="http://schema.org/Article">
                     <i class="fas fa-users" aria-hidden="true"></i>
-                    <h3>Branding</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3 itemprop="headline">Branding</h3>
+                    <p itemprop="articleBody">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </article>
-                <article class="service">
-                    <i class="fas fa-cloud-upload-alt" aria-hidden="true"></i>
-                    <h3>Design</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </article>
-                <article class="service">
-                    <i class="fas fa-code" aria-hidden="true"></i>
-                    <h3>Development</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </article>
-                <article class="service">
-                    <i class="fas fa-wifi" aria-hidden="true"></i>
-                    <h3>Support</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </article>
-            </section>
 
-            <!-- NEWSLETTER -->
-            <section class="newsletter">
-                <h2>Sign up for our newsletter</h2>
-                <form class="email-1">
-                    <input type="email" placeholder="Nora@epost.no" required>
-                    <button type="submit1" class="btn3">Sign me up!</button>
-                </form>
+                <!-- Design Service -->
+                <article class="service" itemscope itemtype="http://schema.org/Article">
+                    <i class="fas fa-cloud-upload-alt" aria-hidden="true"></i>
+                    <h3 itemprop="headline">Design</h3>
+                    <p itemprop="articleBody">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </article>
+
+                <!-- Development Service -->
+                <article class="service" itemscope itemtype="http://schema.org/Article">
+                    <i class="fas fa-code" aria-hidden="true"></i>
+                    <h3 itemprop="headline">Development</h3>
+                    <p itemprop="articleBody">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </article>
+
+                <!-- Support Service -->
+                <article class="service" itemscope itemtype="http://schema.org/Article">
+                    <i class="fas fa-wifi" aria-hidden="true"></i>
+                    <h3 itemprop="headline">Support</h3>
+                    <p itemprop="articleBody">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </article>
             </section>
         </main>
     </div>
 
-    <footer>
-        <img src="img/logo1.png" alt="Company Logo" id="footer-logo">
-        <p>Company copyright © 2023</p>
-        <!-- Inspirasjon for footer, social icons hentet fra: https://github.com/HIO-Webutvikling/WEBUTVIKLING2023/blob/main/RESPONSIVT-DESIGN/04.10/index.html -->
-        <ul id="social-icons">
+    <footer itemscope itemtype="http://schema.org/Organization">
+        <img src="img/logo1.png" alt="Company Logo" id="footer-logo" itemprop="logo">
+        <link itemprop="url" href="#">
+        <p itemprop="copyright">Company copyright © 2023</p>
+        <!-- Social Icons -->
+        <ul id="social-icons" itemprop="sameAs">
             <li><a href="https://www.facebook.com" target="_blank" title="Follow us on Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
             <li><a href="https://www.instagram.com" target="_blank" title="Follow us on Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
             <li><a href="https://www.linkedin.com" target="_blank" title="Follow us on LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
         </ul>
     </footer>
-    
-    
-    
+
 </body>
+
 </html>

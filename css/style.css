@@ -621,8 +621,8 @@ Hentet inspirasjon fra: https://www.w3schools.com/cssref/css3_pr_word-wrap.php*/
 
 .contact-form {
     max-width: 1200px;
-    margin: 2rem;
-    padding: 30px;
+    margin-left: 2rem;
+    padding: 0 5.5rem 2rem;
     display: flex;
     justify-content: space-between;
 }
@@ -656,9 +656,8 @@ textarea {
     height: 150px;
 }
 
-button[type="submit"] {
+#btn3 {
     padding: 1rem;
-    width: 25%;
     background-color: #e6bd43;
     color: #000;
     font-weight: bold;

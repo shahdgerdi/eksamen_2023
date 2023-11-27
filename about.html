@@ -30,24 +30,38 @@
 
 <body class="about-body">
     <div id="grid-container">
+    <!-- TILBAKE TIL TOPPEN KNAPP - Hentet fra: https://levelup.gitconnected.com/how-to-implement-scroll-to-top-with-only-css-ae27cb9d4678 -->
+        <a href="#top" class="back-to-top" title="Go to top of page"><i class="fas fa-arrow-up"></i></a>
     <!-- Header seksjon -->
-    <header>
+    <header itemscope itemtype="https://schema.org/WebPage">
         <a href="index.html">
             <img src="img/logo1.png" alt="Company Logo" id="logo">
         </a>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Portfolio</a></li>
-                <li><a href="about.html" class="active">About</a></li>
-                <li><a href="about.html" class="contact">Contact</a></li>
+        <nav id="breadcrumbs">
+            <ul itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a href="index.html" itemprop="item"><span itemprop="name">Home</span></a>
+                    <meta itemprop="position" content="1">
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a href="products.html" itemprop="item"><span itemprop="name">Portfolio</span></a>
+                    <meta itemprop="position" content="2">
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a href="about.html" itemprop="item" class="active"><span itemprop="name">About</span></a>
+                    <meta itemprop="position" content="3">
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a href="contact.html" itemprop="item" class="contact"><span itemprop="name">Contact</span></a>
+                    <meta itemprop="position" content="4">
+                </li>
             </ul>
         </nav>
+        
     </header>
     
     <!-- Main seksjon -->
     <main>
-
         <section class="about-company" aria-label="Seksjon for infoboks">
             <img src="img/code.jpg" alt="Bilde som bakgrunn" class="background-image">
             <article class="about-info">
@@ -148,16 +162,17 @@
     </main>
     
     <!-- Footer seksjon -->
-    <footer>
-        <img src="img/logo1.png" alt="Company Logo" id="footer-logo">
-        <p>Company copyright © 2023</p>
-        <ul id="social-icons">
-            <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-            <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-            <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+    <footer itemscope itemtype="http://schema.org/Organization">
+        <img src="img/logo1.png" alt="Company Logo" id="footer-logo" itemprop="logo">
+        <link itemprop="url" href="#">
+        <p itemprop="copyright">Company copyright © 2023</p>
+        <!-- Social Icons -->
+        <ul id="social-icons" itemprop="sameAs">
+            <li><a href="https://www.facebook.com" target="_blank" title="Follow us on Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.instagram.com" target="_blank" title="Follow us on Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.linkedin.com" target="_blank" title="Follow us on LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
         </ul>
     </footer>
-    <a href="#top" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
 </div>
 
 </body>

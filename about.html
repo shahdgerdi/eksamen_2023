@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- "Vanlig" metadata -->
+    <!-- Standard metadata -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Opengraph metadata : Hentet fra: https://rankmath.com/kb/open-graph-meta-tags/ -->
+    <!-- Opengraph metadata: Hentet fra https://rankmath.com/kb/open-graph-meta-tags/ -->
     <meta property="og:title" content="Company Business - About Our Story and Mission">
     <meta property="og:type" content="website">
     <meta property="og:description" content="Learn about Company Business's history, mission, and values on our page.">
     <meta property="og:image" content="https://cdn.pixabay.com/photo/2018/01/20/14/26/skyscraper-3094696_1280.jpg">
     
+    <!-- Tittel for siden -->
     <title>Company Business</title>
     
-    <!-- FAVICON : Hentet fra: https://www.w3schools.com/html/html_favicon.asp -->
+    <!-- FAVICON: Hentet fra https://www.w3schools.com/html/html_favicon.asp -->
     <link rel="icon" type="image/x-icon" href="img/favicon-fruit.png">
     
-    <!-- CSS-stiler og ikoner -->
+    <!-- Lenker til CSS-filen -->
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    
+    <!-- Lenker til Font Awesome-ikonene -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link href="css/font/css/fontawesome.css" rel="stylesheet">
+    <link href="css/font/css/brands.css" rel="stylesheet">
+    <link href="css/font/css/solid.css" rel="stylesheet">
 </head>
 <body class="about-body">
     <div id="grid-container">
-        <!-- TILBAKE TIL TOPPEN KNAPP - Hentet fra: https://levelup.gitconnected.com/how-to-implement-scroll-to-top-with-only-css-ae27cb9d4678 -->
+        <!-- TILBAKE TIL TOPPEN KNAPP: Hentet fra https://levelup.gitconnected.com/how-to-implement-scroll-to-top-with-only-css-ae27cb9d4678 -->
         <a href="#top" class="back-to-top" title="Go to top of page"><i class="fas fa-arrow-up"></i></a>
         
         <!-- Header seksjon -->
@@ -61,7 +67,8 @@
                 <meta itemprop="url" content="#">
                 <img src="img/code.jpg" alt="Bilde som bakgrunn" class="background-image">
                 <article class="about-info">
-                    <h1>About Our Company</h1>
+                    <h1>Company name</h1>
+                    <h2>About our company</h2>
                     <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                     <a href="#h2-contact" class="readmore-btn">Get in touch with us</a>
                 </article>
@@ -123,7 +130,7 @@
             
 
             <!-- Kontakt oss -->
-            <!-- Kode hentet fra: https://www.w3schools.com/howto/howto_css_contact_form.asp -->
+            <!-- Kode hentet fra https://www.w3schools.com/howto/howto_css_contact_form.asp -->
             <h2 id="h2-contact">Contact Us</h2>
             <div class="contact-form" itemscope itemtype="http://schema.org/ContactPage">
                 <section class="submit-message">
@@ -138,7 +145,7 @@
                         <label for="message">Message</label>
                         <textarea id="message" name="message" required></textarea>
 
-                        <button type="submit" class="message-button">Send message</button>
+                        <button type="submit" title="Click to send" class="message-button">Send message</button>
                     </form>
                 </section>
 
@@ -157,7 +164,7 @@
             </div>
 
             <!-- GOOGLE MAPS, KART - seksjon -->
-            <!-- Kode hentet fra: https://blog.hubspot.com/website/how-to-embed-google-map-in-html -->
+            <!-- Kode hentet fra https://blog.hubspot.com/website/how-to-embed-google-map-in-html -->
             <section class="google-map" aria-label="Google map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.188441060451!2d11.350228376782145!3d59.12924747451802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f72dd0f16b%3A0x54daade2c0319210!2sH%C3%B8gskolen%20i%20%C3%98stfold%20-%20Halden!5e0!3m2!1sno!2sno!4v1700761492172!5m2!1sno!2sno" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section>
@@ -169,6 +176,7 @@
             <link itemprop="url" href="#">
             <p itemprop="founder">Company copyright © 2023</p>
             <!-- Social icons for footer -->
+            <!-- Oppsett inspirert fra: https://github.com/HIO-Webutvikling/WEBUTVIKLING2023/blob/main/HTML-OG-CSS/25.09/index.html -->
             <ul id="social-icons" itemprop="sameAs">
                 <li><a href="https://www.facebook.com" target="_blank" title="Follow us on Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
                 <li><a href="https://www.instagram.com" target="_blank" title="Follow us on Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>

@@ -429,7 +429,7 @@ Hentet inspirasjon fra: https://www.w3schools.com/cssref/css3_pr_word-wrap.php*/
 }
 
 .portfolio-navigation a:hover {
-    background-color: #252525; /* Riktig eiendom for bakgrunnsfarge */
+    background-color: #252525; 
     color: #e6bd43;
 }
 
@@ -693,8 +693,6 @@ button[type="submit"]:hover {
 }
 
 
-
-
 /*  =============================
           MEDIE-QUERIES: 
       STILER FOR MOBILVERSJON
@@ -761,6 +759,42 @@ button[type="submit"]:hover {
         font-size: 20px;
     }
 
+    /* FRAVÆRER HOVER EFFEKT PÅ MOBILE */
+
+
+      .contact:hover {
+        background-color: #e6bd43; /* Tilbake til opprinnelig bakgrunnsfarge */
+        color: inherit; /* Behold opprinnelig tekstfarge */
+    }
+
+    .btn:hover,
+    .about-btn2:hover,
+    .btn3:hover {
+        background-color: #252525; /* Tilbake til opprinnelig bakgrunnsfarge for disse knappene */
+        color: #f1c40f; /* Tilbake til opprinnelig tekstfarge for disse knappene */
+    }
+
+    .portfolio-navigation a:hover,
+    nav ul li a:hover {
+        color: inherit; /* Behold opprinnelig tekstfarge */
+        background-color: inherit;
+
+    }
+
+    #branding article:hover,
+    #design article:hover,
+    #development article:hover {
+        transform: none; /* Fjern zoom-effekten */
+
+        
+    }
+
+    .readmore-btn:hover,
+    button[type="submit"]:hover {
+        background-color: #e6bd43; /* Tilbake til opprinnelig bakgrunnsfarge */
+        color: #000; /* Tilbake til opprinnelig tekstfarge */
+      
+    }
 
     /* 
     ==================
@@ -905,4 +939,7 @@ button[type="submit"] {
     .google-map iframe {
         height: 300px;
     }
+
+
+
 }

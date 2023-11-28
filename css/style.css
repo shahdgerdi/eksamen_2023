@@ -627,7 +627,7 @@ Hentet inspirasjon fra: https://www.w3schools.com/cssref/css3_pr_word-wrap.php*/
     justify-content: space-between;
 }
 
-#h2-contact {
+#h2-contact{
     text-align: center;
     font-size: 2em;
     padding: 2rem;
@@ -656,8 +656,9 @@ textarea {
     height: 150px;
 }
 
-#btn3 {
-    padding: 1rem;
+.message-button {
+    padding: 0.8rem;
+    max-width: 150px;
     background-color: #e6bd43;
     color: #000;
     font-weight: bold;
@@ -847,21 +848,24 @@ button[type="submit"]:hover {
 ==================
 */
 
-/* Baktrunns */
+/* Bakgrunnsbilde */
 .background-image {
     height: 750px; 
     width: 100%;
 }
 
+/* Infoboks */
 .about-info {
     width: 80%; 
     padding: 2.5rem; 
 }
 
+/* Tekstsstiler */
 .about-info h1, .about-info h2, .about-info p {
     font-size: 1rem; 
 }
 
+/* Knappstil */
 .readmore-btn {
     padding: 0.5rem 1rem; 
     font-size: 1rem;
@@ -869,14 +873,14 @@ button[type="submit"]:hover {
 
 
 
-.contact-form {
-    flex-direction: column; /* Stabler elementene vertikalt */
-}
+
 
 .submit-message, .contact-info {
-    width: 100%; /* Fyller ut hele bredden */
+    width: 90%;
     margin-bottom: 1rem; /* Legger til litt margin mellom elementene */
 }
+
+
 
 button[type="submit"] {
     width: 100%; /* Full bredde for mobil */
@@ -886,6 +890,7 @@ button[type="submit"] {
     /* Gjør at flex-container står vertikalt istedenfor horisontalt */
     .services-2, .contact-form {
         flex-direction: column;
+        padding: 1rem;
     }
 
 

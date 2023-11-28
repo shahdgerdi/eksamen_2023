@@ -27,14 +27,16 @@
         <!-- TILBAKE TIL TOPPEN KNAPP - Hentet fra: https://levelup.gitconnected.com/how-to-implement-scroll-to-top-with-only-css-ae27cb9d4678 -->
         <a href="#top" class="back-to-top" title="Go to top of page"><i class="fas fa-arrow-up"></i></a>
 
+        <!-- Hovednavigasjon og logo -->
         <header itemscope itemtype="https://schema.org/WebPage">
             <a href="index.html">
                 <img itemprop="logo" src="img/logo1.png" alt="Company Logo" id="logo">
             </a>
+            <!-- Navigasjonsmeny -->
             <nav>
                 <ul itemscope itemtype="https://schema.org/BreadcrumbList">
                     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                        <a href="index.html" itemprop="item"><span itemprop="name">Home</span></a>
+                        <a href="index.html" itemprop="item" class="active"><span itemprop="name">Home</span></a>
                         <meta itemprop="position" content="1">
                     </li>
                     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
@@ -42,40 +44,41 @@
                         <meta itemprop="position" content="2">
                     </li>
                     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                        <a href="about.html" itemprop="item" class="active"><span itemprop="name">About</span></a>
+                        <a href="about.html" itemprop="item"><span itemprop="name">About</span></a>
                         <meta itemprop="position" content="3">
                     </li>
                     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                        <a href="contact.html" itemprop="item" class="contact"><span itemprop="name">Contact</span></a>
+                        <a href="about.html#h2-contact" itemprop="item" class="contact"><span itemprop="name">Contact</span></a>
                         <meta itemprop="position" content="4">
                     </li>
                 </ul>
             </nav>
         </header>
-
-        <main itemprop="mainContentOfPage" itemscope itemtype="https://schema.org/Article">
-            <section class="mountains">
-                <!-- Video for forsiden -->
-                <!-- Kode hentet fra: https://www.gumlet.com/learn/how-to-autoplay-html-video/ -->
-                <video itemprop="subjectOf" itemscope itemtype="https://schema.org/VideoObject" autoplay muted loop id="myVideo">
+        <!-- Main området -->
+        <main itemscope itemtype="https://schema.org/WebPage">
+            <section class="mountains" itemscope itemtype="https://schema.org/WebPage">
+                <!-- Bakgrunns video - KODE HENTET FRA : https://www.gumlet.com/learn/how-to-autoplay-html-video/--> 
+                <video autoplay muted loop id="myVideo" itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
                     <source src="img/mountains.mp4" type="video/mp4" itemprop="contentUrl">
                     <meta itemprop="name" content="Video-background">
-                    <meta itemprop="thumbnailUrl" content="img/mountains.mp4">
+                    <meta itemprop="thumbnailUrl" content="img/mountains.jpg">
                     <meta itemprop="uploadDate" content="2023-11-27">
                     <meta itemprop="description" content="Video on loop with beautiful view.">
                 </video>
-                <!-- Bildet som er kun tilgjengelig på mobil versjonen -->
+                <!-- Bilde bakgrunn - kun synlig på mobilvisning -->
                 <img src="img/seoul.jpg" alt="Picture with view of Seoul, showing urban landscape" class="seoul-image">
                 <h1 itemprop="headline">Compelling headline</h1>
                 <p itemprop="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
                 <a href="#our-services" class="btn">Read more about our services</a>
             </section>
 
+        
             <section class="intro">
                 <h2>Engaging subheading. What can you help your visitors with</h2>
                 <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
             </section>
 
+            <!-- Artikkel klasse : About our company -->
             <article class="about">
                 <img src="https://placehold.co/400x400" alt="A placeholder picture dedicated for information about the company" class="about-image">
                 <div class="about-text">
@@ -116,14 +119,23 @@
                     <p itemprop="articleBody">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </article>
             </section>
+            <!-- NEWSLETTER -->
+            <section class="newsletter" itemscope itemtype="http://schema.org/WebPageElement">
+                <h2 itemprop="name">Sign up for our newsletter</h2>
+                <form class="email-1" itemprop="url">
+                    <input type="email" placeholder="Nora@epost.no" required>
+                    <button type="submit" class="btn3">Sign me up!</button>
+                </form>
+            </section>
         </main>
     </div>
 
+    <!-- Footer området -->
     <footer itemscope itemtype="http://schema.org/Organization">
         <img src="img/logo1.png" alt="Company Logo" id="footer-logo" itemprop="logo">
         <link itemprop="url" href="#">
-        <p itemprop="copyright">Company copyright © 2023</p>
-        <!-- Social Icons -->
+        <p itemprop="founder">Company copyright © 2023</p>
+        <!-- Social icons for footer -->
         <ul id="social-icons" itemprop="sameAs">
             <li><a href="https://www.facebook.com" target="_blank" title="Follow us on Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
             <li><a href="https://www.instagram.com" target="_blank" title="Follow us on Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
@@ -132,5 +144,4 @@
     </footer>
 
 </body>
-
 </html>

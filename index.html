@@ -18,8 +18,13 @@
 
     <!-- FAVICON : Hentet fra: https://www.w3schools.com/html/html_favicon.asp -->
     <link rel="icon" type="image/x-icon" href="img/favicon-fruit.png">
+    <!-- Lenker filen til CSS mappen -->
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!-- Linker til Font Awesome til filen -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link href="css/font/css/fontawesome.css" rel="stylesheet">
+    <link href="css/font/css/brands.css" rel="stylesheet">
+    <link href="css/font/css/solid.css" rel="stylesheet">
 </head>
 
 <body>
@@ -54,10 +59,11 @@
                 </ul>
             </nav>
         </header>
+
         <!-- Main området -->
         <main itemscope itemtype="https://schema.org/WebPage">
             <section class="mountains" itemscope itemtype="https://schema.org/WebPage">
-                <!-- Bakgrunns video - KODE HENTET FRA : https://www.gumlet.com/learn/how-to-autoplay-html-video/--> 
+                <!-- Bakgrunns video - KODE HENTET FRA : https://www.gumlet.com/learn/how-to-autoplay-html-video/ --> 
                 <video autoplay muted loop id="myVideo" itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
                     <source src="img/mountains.mp4" type="video/mp4" itemprop="contentUrl">
                     <meta itemprop="name" content="Video-background">
@@ -129,13 +135,13 @@
             </section>
         </main>
     </div>
-
     <!-- Footer området -->
     <footer itemscope itemtype="http://schema.org/Organization">
         <img src="img/logo1.png" alt="Company Logo" id="footer-logo" itemprop="logo">
         <link itemprop="url" href="#">
         <p itemprop="founder">Company copyright © 2023</p>
         <!-- Social icons for footer -->
+        <!-- Oppsett inspirert fra: https://github.com/HIO-Webutvikling/WEBUTVIKLING2023/blob/main/HTML-OG-CSS/25.09/index.html -->
         <ul id="social-icons" itemprop="sameAs">
             <li><a href="https://www.facebook.com" target="_blank" title="Follow us on Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
             <li><a href="https://www.instagram.com" target="_blank" title="Follow us on Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
